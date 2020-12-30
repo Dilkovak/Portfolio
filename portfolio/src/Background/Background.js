@@ -1,5 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
+import * as THREE from 'three'
+import React, { useEffect } from 'react'
+import { Canvas } from 'react-three-fiber'
+import { useSprings, a } from 'react-spring/three'
+
 
 class Template extends React.Component {
     constructor(props) {    
