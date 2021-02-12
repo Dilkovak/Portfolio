@@ -3,17 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import App from './TestThreeJS/TestThreeJS';
+import TerminalAccess from './Terminal/Terminal';
 
 
-<App />
-// ReactDOM.render(
-//   // <React.StrictMode>
-//     {/* <App /> */}
-//     <Box />
+var appElement = <TerminalAccess />;
+// ReactDOM.render(appElement)
+{/* <TerminalAccess /> */}
+ReactDOM.render(
+  // <React.StrictMode>
+    appElement
+    // <Box />
 //   {/* </React.StrictMode>, */}
-//   document.getElementById('root')
-// );
+
+  ,document.getElementById('root')
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
