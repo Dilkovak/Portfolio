@@ -2,6 +2,8 @@ import Terminal from 'react-bash';
 import React, { Component } from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import dark from './TerminalStyle';
+// import TerminalStyle from './TerminalStyle';
 const history = [
     { value: 'Type `help` to begin' },
 ];
@@ -33,21 +35,21 @@ const extensions = {
     } 
     return(
     <MuiThemeProvider>
-            <Tabs>
-                 <Tab label="Docker Administration" >
+            {/* <Tabs> */}
+                 {/* <Tab label="Docker Administration" > */}
                  <center>
-                 <div className="parentContainer">
-                 <h4>Run docker administration commands here</h4>
-                  <div style={{flex:1}}>
-                  <Terminal history={history} structure={structure} extensions={extensions} prefix={"user@HOMEPC"}/>  
-                  </div>
+                 {/* <div className="parentContainer"> */}
+                 {/* <h4>Run docker administration commands here</h4> */}
+                  {/* <div style={{flex:1}}> */}
+                  <Terminal history={history} styles={dark} structure={structure} extensions={extensions} prefix={"user@HOMEPC"}/>  
+                  {/* </div> */}
                   <div>
                         {this.state.commandData}
                   </div>    
-                 </div>
+                 {/* </div> */}
                  </center>
-             </Tab>
-            </Tabs>
+             {/* </Tab> */}
+            {/* </Tabs> */}
         </MuiThemeProvider>
     )
 }
