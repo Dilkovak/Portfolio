@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import dark from './TerminalStyle';
+console.log(dark)
+console.log(Terminal.Themes)
 // import TerminalStyle from './TerminalStyle';
 const history = [
     { value: 'Type `help` to begin' },
@@ -41,7 +43,7 @@ const extensions = {
                  {/* <div className="parentContainer"> */}
                  {/* <h4>Run docker administration commands here</h4> */}
                   {/* <div style={{flex:1}}> */}
-                  <Terminal history={history} styles={dark} structure={structure} extensions={extensions} prefix={"user@HOMEPC"}/>  
+                  <Terminal history={history} theme={dark.dark} structure={structure} extensions={extensions} prefix={"user@HOMEPC"}/>  
                   {/* </div> */}
                   <div>
                         {this.state.commandData}
